@@ -41,6 +41,7 @@ const CreateTable = {
     // const user = await Users.findById(req.user.id).select("-password");
     try {
       if (table) return res.status(200).json(table);
+      if (table === null) return res.json({"msg" : " no tables found at alll"})
       return res
         .status(400)
         .json( "pas de nouvelles reservations pour le moment" );

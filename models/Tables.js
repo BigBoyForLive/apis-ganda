@@ -63,7 +63,10 @@ const reservationModel = new mongoose.Schema(
       type: Date,
       default: Date.now,
       index: { expires: 10 * 24 * 60 * 60 },
-    }, // efface automatiquement de la db apres 10jours
+    },
+    
+    
+    // efface automatiquement de la db apres 10jours
   },
   {
     timestamps: true,
