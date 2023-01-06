@@ -39,11 +39,11 @@ const userCtrl = {
       };
 
       const activation_token = createActivationToken(newUser);
-      const url = `http://3.101.83.39:3002/user/activate/${activation_token}`;
+      const url = `http://54.193.151.210:3000/user/activate/${activation_token}`;
 
       sendMail(
         email,
-        `http://3.101.83.39:3002/user/activate/${activation_token}`, // add the link of the app
+        `http://54.193.151.210:3000/user/activate/${activation_token}`, // add the link of the app
         `FINALISER L'INSCRIPTION`,
         " Work Et Yamo est un cadre de travail spacieux , aéré et climatisé a la portée de toutes les bourses , mettant ainsi à votre disposition plus de <b>6500</b> cours en ligne grace à notre connexion fibre optique"
       );
